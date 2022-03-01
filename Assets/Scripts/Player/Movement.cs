@@ -17,10 +17,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private SpriteRenderer dud;
 
     private Rigidbody2D rb;
-    private Vector2     input;
+    private Vector2 input;
 
-    private bool        dash      = false;
-    private float       dashTimer = 0f;
+    private bool dash = false;
+    private float dashTimer = 0f;
+
+    [SerializeField] FixedJoystick joystick;
 
     private void Awake()
     {
@@ -29,7 +31,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        input = new Vector2(joystick.Horizontal, joystick.Vertical);
 
         if (Time.timeScale > 0f)
         {
@@ -86,7 +88,6 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if(MapManager.GetInstance() != null)
-            MapManager.GetInstance().SetCoordinates(rb.position);
+        if(MapManager.GetInstance() != null) MapManager.GetInstance().SetCoordinates(rb.position);
     }
 }
