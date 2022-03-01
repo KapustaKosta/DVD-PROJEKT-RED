@@ -27,7 +27,10 @@ public class Turret : MonoBehaviour
 
             if (isShooting)
             {
-                transform.rotation = Quaternion.LookRotation(center.position, joystick.Direction);
+                Quaternion rotation = Quaternion.LookRotation(center.position, joystick.Direction);
+                rotation = Quaternion.Euler(0, 0, rotation.eulerAngles.z);
+                transform.rotation = rotation;
+
                 transform.rotation *= Quaternion.Euler(0, 0, 90);
             }
         }
