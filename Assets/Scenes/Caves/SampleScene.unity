@@ -455,7 +455,7 @@ MonoBehaviour:
   height: 50
   chunkNumArray: 0000000001000000
   seed: 123
-  itemsCount: 0b000000020000000200000005000000
+  itemsCount: 08000000020000000200000004000000
 --- !u!4 &271239993
 Transform:
   m_ObjectHideFlags: 0
@@ -8348,7 +8348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f821b8486871f449b148604526f321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gearsToWin: 20
+  gearsToWin: 12
 --- !u!1 &1457496431
 GameObject:
   m_ObjectHideFlags: 0

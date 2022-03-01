@@ -455,7 +455,7 @@ MonoBehaviour:
   height: 50
   chunkNumArray: 0000000001000000
   seed: 123
-  itemsCount: 0f000000020000000200000004000000
+  itemsCount: 0a000000020000000200000004000000
 --- !u!4 &271239993
 Transform:
   m_ObjectHideFlags: 0
