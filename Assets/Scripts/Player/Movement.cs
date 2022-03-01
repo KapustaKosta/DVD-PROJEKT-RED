@@ -56,17 +56,6 @@ public class Movement : MonoBehaviour
                 return;
             }
         }
-        //dash
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            dashTimer = 0;
-            dash = true;
-        }
-        else if(Input.GetKeyUp(KeyCode.Space))
-        {
-            dash = false;
-            waitAfterDash = true;
-        }
     }
 
     private void FixedUpdate()
@@ -89,5 +78,11 @@ public class Movement : MonoBehaviour
         }
 
         if(MapManager.GetInstance() != null) MapManager.GetInstance().SetCoordinates(rb.position);
+    }
+
+    public void Dash()
+    {
+        dash = true;
+        dashTimer = 0;
     }
 }

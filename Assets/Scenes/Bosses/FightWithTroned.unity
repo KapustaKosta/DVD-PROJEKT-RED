@@ -130,6 +130,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 10983470807285898, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 284105914}
+    - target: {fileID: 10983470807285898, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Dash
+      objectReference: {fileID: 0}
+    - target: {fileID: 10983471406075568, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 84318325}
     - target: {fileID: 5549540933515027232, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
         type: 3}
       propertyPath: m_Camera
@@ -624,12 +639,12 @@ PrefabInstance:
         type: 3}
       propertyPath: center
       value: 
-      objectReference: {fileID: 1375186026}
+      objectReference: {fileID: 0}
     - target: {fileID: 4127163165102806184, guid: 05893226f9c085c4392fba2ddb92f801,
         type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 1483754860}
+      objectReference: {fileID: 0}
     - target: {fileID: 5039484339209441625, guid: 05893226f9c085c4392fba2ddb92f801,
         type: 3}
       propertyPath: health
@@ -648,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 6661920066921763143, guid: 05893226f9c085c4392fba2ddb92f801,
         type: 3}
       propertyPath: m_Name
-      value: Dude
+      value: Droid
       objectReference: {fileID: 0}
     - target: {fileID: 6661920066921763160, guid: 05893226f9c085c4392fba2ddb92f801,
         type: 3}
@@ -714,7 +729,7 @@ PrefabInstance:
         type: 3}
       propertyPath: joystick
       value: 
-      objectReference: {fileID: 446793467}
+      objectReference: {fileID: 0}
     - target: {fileID: 6661920066921763161, guid: 05893226f9c085c4392fba2ddb92f801,
         type: 3}
       propertyPath: dashSpeed
@@ -727,6 +742,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05893226f9c085c4392fba2ddb92f801, type: 3}
+--- !u!114 &284105914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6661920066921763161, guid: 05893226f9c085c4392fba2ddb92f801,
+    type: 3}
+  m_PrefabInstance: {fileID: 284105913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031931472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9112b0dbb910b45997bcdf822232df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &286384203
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,18 +892,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &446793467 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7324301588762934045, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 81190502}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &677067104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,24 +1165,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1375186026 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5549540934834465238, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 81190502}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1483754860 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7324301587904155817, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 81190502}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1560035477
 GameObject:
   m_ObjectHideFlags: 0
