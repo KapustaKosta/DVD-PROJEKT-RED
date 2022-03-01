@@ -467,7 +467,7 @@ MonoBehaviour:
   height: 50
   chunkNumArray: 0000000001000000
   seed: 123
-  itemsCount: 0b000000020000000200000005000000
+  itemsCount: 08000000020000000200000004000000
 --- !u!4 &271239993
 Transform:
   m_ObjectHideFlags: 0
@@ -8924,6 +8924,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1545822110}
+    - target: {fileID: 10983470905064520, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
+        type: 3}
+      propertyPath: gearsToWin
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 10983471406075568, guid: 29e2f6317aa66a74fb0287d837e3c6d4,
         type: 3}
       propertyPath: m_Camera
