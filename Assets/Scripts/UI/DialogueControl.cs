@@ -35,19 +35,27 @@ public class DialogueControl : MonoBehaviour
 
     private float   textTimer;
 
+    private DialogueSounds Sounds;
+
     private void Awake()
     {
+        Sounds = GetComponent<DialogueSounds>();
         if(toTroned)
             nextSceneName = GlobalFields.fightWithTronedSceneName;
         else
             nextSceneName = GlobalFields.gameplaySceneName;
 
         currentLine = 0;
+    }
+
+    private void Start()
+    {
         SetLine(lines[0]);
     }
 
     private void SetLine(Line _line)
     {
+        Sounds.StopSound();
         currentTextIndex    = 0;
         textTimer           = textSpeed;
 
@@ -61,18 +69,21 @@ public class DialogueControl : MonoBehaviour
                 speakerText.text       = "Робот";
                 speakerText.alignment  = TextAnchor.MiddleLeft;
                 dialogueText.alignment = TextAnchor.UpperLeft;
+                Sounds.PlaySound(Sounds.RatSpeech2, 0.8f);
                 break;
             
             case Speaker.VRUDNI:
                 speakerText.text       = "Врудни";
                 speakerText.alignment  = TextAnchor.MiddleRight;
                 dialogueText.alignment = TextAnchor.UpperRight;
+                Sounds.PlaySound(Sounds.VrudniSpeech, 0.3f);
                 break;
                 
             case Speaker.TRONED:
                 speakerText.text       = "Тронед";
                 speakerText.alignment  = TextAnchor.MiddleRight;
                 dialogueText.alignment = TextAnchor.UpperRight;
+                Sounds.PlaySound(Sounds.TronedSpeech, 0.8f);
                 break;
         }
     }
