@@ -100,7 +100,8 @@ public class DialogueControl : MonoBehaviour
                 else
                 {
                     //переход к игре
-                    SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
+                    toNextScene();
+                    //SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
                 }
             }
 
@@ -121,5 +122,15 @@ public class DialogueControl : MonoBehaviour
 
             dialogueText.text = currentText;
         }
+    }
+
+    private void toNextScene()
+    {
+        SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
+    }
+
+    public void Skip()
+    {
+        toNextScene();
     }
 }

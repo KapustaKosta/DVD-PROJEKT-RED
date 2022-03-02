@@ -468,10 +468,10 @@ RectTransform:
   m_Father: {fileID: 10983471999226212}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: -210}
-  m_SizeDelta: {x: 140.76, y: 140.76}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -90, y: 310}
+  m_SizeDelta: {x: 140.76001, y: 140.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10983470807285896
 CanvasRenderer:
@@ -753,7 +753,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 193, y: 203}
+  m_AnchoredPosition: {x: 243, y: 153}
   m_SizeDelta: {x: 186.56, y: 186.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10983470899415141
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78f821b8486871f449b148604526f321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gearsToWin: 20
+  gearsToWin: 12
 --- !u!1 &10983471359825204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,10 +1905,10 @@ RectTransform:
   m_Father: {fileID: 10983471406075575}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1090, y: 203}
-  m_SizeDelta: {x: 186.56, y: 186.56}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -243, y: 153}
+  m_SizeDelta: {x: 186.56006, y: 186.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &10983472138852511
 CanvasRenderer:
