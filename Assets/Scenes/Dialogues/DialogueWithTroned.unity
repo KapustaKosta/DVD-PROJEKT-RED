@@ -331,10 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582ee3dc190b20d4c9081fa1dfb1c7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VrudniSpeech:
-  - {fileID: 8300000, guid: da8b13005c2f8b24393ae755e1e285db, type: 3}
-  - {fileID: 8300000, guid: 1bca3e69214d3c04aabbfdf90de3a973, type: 3}
-  - {fileID: 8300000, guid: 0e23f723c9e6a1043b610221d539aedc, type: 3}
+  VrudniSpeech: {fileID: 0}
   RatSpeech: {fileID: 8300000, guid: 5262d31ed888a434f954d513e3d14866, type: 3}
   TronedSpeech: {fileID: 8300000, guid: dbec9833f65d7ec4f88d7748ca9eb266, type: 3}
   RatSpeech2: {fileID: 8300000, guid: 6624477ce18326249ba25e9073d410d3, type: 3}
@@ -347,7 +344,8 @@ AudioSource:
   m_GameObject: {fileID: 317564733}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8008108066776596917, guid: eb3a4c48b51c4a448a35ba155228e6a4,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1231,7 +1229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.999939, y: -10}
+  m_AnchoredPosition: {x: -10, y: -10}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.9999998, y: 0.99999994}
 --- !u!114 &2010173893
