@@ -17,6 +17,5 @@ public class SoundsScrollbarControl : ScrollControl
 
         float targetBackgroundSize = GetTargetBackgroundSize(targetPosition);
         background.sizeDelta = new Vector2(Mathf.Lerp(0, startBackgroundWidth, targetBackgroundSize), background.rect.height);
-        background.transform.position = new Vector3(Mathf.Lerp(endBackgroundPoint.position.x, startBackgroundPosition, targetBackgroundSize), background.transform.position.y, 0);
     }
 }

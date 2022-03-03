@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private float speed     = 7.5f;
-    
-    [SerializeField] private float dashTime  = 0.3f;
+    [SerializeField] private float speed = 7.5f;
+
+    [SerializeField] private float dashTime = 0.3f;
     [SerializeField] private float dashSpeed = 20.0f;
 
     [SerializeField] private float timeBetweenDashes = 0.3f;
@@ -19,8 +19,8 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 input;
 
-    private bool dash = false;
-    private float dashTimer = 0f;
+    public bool dash = false;
+    public float dashTimer = 0f;
 
     [SerializeField] FixedJoystick joystick;
 
@@ -61,12 +61,12 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + input.normalized * speed * Time.fixedDeltaTime);
-        
-        if(dash)
+
+        if (dash)
         {
             dashTimer += Time.fixedDeltaTime;
 
-            if(dashTimer < dashTime)
+            if (dashTimer < dashTime)
             {
                 rb.MovePosition(rb.position + input.normalized * dashSpeed * Time.fixedDeltaTime);
             }
@@ -77,12 +77,6 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if(MapManager.GetInstance() != null) MapManager.GetInstance().SetCoordinates(rb.position);
-    }
-
-    public void Dash()
-    {
-        dash = true;
-        dashTimer = 0;
+        if (MapManager.GetInstance() != null) MapManager.GetInstance().SetCoordinates(rb.position);
     }
 }

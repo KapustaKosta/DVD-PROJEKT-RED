@@ -15,13 +15,11 @@ public class ScrollControl : MonoBehaviour, IPointerClickHandler, IBeginDragHand
     [SerializeField] protected Transform endBackgroundPoint;
 
     protected float startBackgroundWidth;
-    protected float startBackgroundPosition;
     [SerializeField] protected RectTransform background;
 
     void Start()
     {
         startBackgroundWidth = background.rect.width;
-        startBackgroundPosition = background.position.x;
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
@@ -44,7 +42,6 @@ public class ScrollControl : MonoBehaviour, IPointerClickHandler, IBeginDragHand
 
         float targetBackgroundSize = GetTargetBackgroundSize(targetPosition);
         background.sizeDelta = new Vector2(Mathf.Lerp(0, startBackgroundWidth, targetBackgroundSize), background.rect.height);
-        background.transform.position = new Vector3(Mathf.Lerp(endBackgroundPoint.position.x, startBackgroundPosition, targetBackgroundSize), background.transform.position.y, 0);
     }
 
 
