@@ -969,6 +969,7 @@ GameObject:
   - component: {fileID: 1081327361}
   - component: {fileID: 1081327360}
   - component: {fileID: 1081327359}
+  - component: {fileID: 1081327362}
   m_Layer: 5
   m_Name: Skip button
   m_TagString: Untagged
@@ -990,11 +991,11 @@ RectTransform:
   m_Father: {fileID: 317564737}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -10}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 590, y: 261}
   m_SizeDelta: {x: 80, y: 80}
-  m_Pivot: {x: 0.9999998, y: 0.99999994}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081327359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,7 +1040,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1020710145}
         m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
@@ -1089,6 +1090,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081327357}
   m_CullTransparentMesh: 1
+--- !u!114 &1081327362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081327357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538f990f3b9c53f4f83663a8e4a38b7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1437740360
 GameObject:
   m_ObjectHideFlags: 0
