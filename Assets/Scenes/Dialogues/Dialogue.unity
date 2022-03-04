@@ -135,6 +135,10 @@ GameObject:
   - component: {fileID: 317564736}
   - component: {fileID: 317564735}
   - component: {fileID: 317564734}
+  - component: {fileID: 317564740}
+  - component: {fileID: 317564739}
+  - component: {fileID: 317564738}
+  - component: {fileID: 317564741}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -220,6 +224,7 @@ RectTransform:
   - {fileID: 822587854}
   - {fileID: 881273625}
   - {fileID: 1726644056}
+  - {fileID: 864346014}
   - {fileID: 1081327358}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -229,6 +234,213 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &317564738
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317564733}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &317564739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317564733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582ee3dc190b20d4c9081fa1dfb1c7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VrudniSpeech: {fileID: 8300000, guid: da8b13005c2f8b24393ae755e1e285db, type: 3}
+  RatSpeech: {fileID: 8300000, guid: 5262d31ed888a434f954d513e3d14866, type: 3}
+  TronedSpeech: {fileID: 8300000, guid: dbec9833f65d7ec4f88d7748ca9eb266, type: 3}
+  RatSpeech2: {fileID: 8300000, guid: 6624477ce18326249ba25e9073d410d3, type: 3}
+--- !u!114 &317564740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317564733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d3c06f3168f2b4fa8b284a515a838d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toTroned: 0
+  speakPauseMultiplier: 3
+  speakPauses: 2e002c0021003f002d00
+  dialogueText: {fileID: 1048092670}
+  speakerText: {fileID: 822587855}
+  textSpeed: 0.075
+  lines:
+  - speaker: 1
+    text: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C
+      \u0442\u0435\u0431\u044F, \u043D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446!
+      \u041C\u044B \u0440\u0430\u0434\u044B \u0432\u0438\u0434\u0435\u0442\u044C
+      \u0442\u0435\u0431\u044F \u043D\u0430 \u0441\u0432\u043E\u0435\u0439 \u0437\u0435\u043C\u043B\u0435
+      - \u0437\u0435\u043C\u043B\u0435 \u043D\u0430\u0440\u043E\u0434\u0430 \u0432\u0440\u0443\u0434\u043D\u0435\u0439.
+      \u0421\u0440\u0430\u0437\u0443 \u0445\u043E\u0442\u0438\u043C \u0441\u043A\u0430\u0437\u0430\u0442\u044C,
+      \u0447\u0442\u043E \u043D\u0435 \u043F\u0440\u0438\u0447\u0438\u043D\u0438\u043C
+      \u0442\u0435\u0431\u0435 \u043D\u0438\u043A\u0430\u043A\u043E\u0439 \u043E\u0431\u0438\u0434\u044B.
+      \u0421\u043A\u0430\u0436\u0438 \u043D\u0430\u043C, \u043A\u0442\u043E \u0442\u044B
+      \u0438 \u0437\u0430\u0447\u0435\u043C \u043F\u0440\u0438\u0448\u0451\u043B
+      \u043D\u0430 \u043D\u0430\u0448\u0443 \u0437\u0435\u043C\u043B\u044E?"
+  - speaker: 0
+    text: "\u042F \u0440\u043E\u0431\u043E\u0442. \u0421\u044E\u0434\u0430 \u043C\u0435\u043D\u044F
+      \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438 \u043B\u044E\u0434\u0438,
+      \u0447\u0442\u043E\u0431\u044B \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0434\u0435\u0442\u0430\u043B\u0438,
+      \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0440\u0430\u0437\u043B\u0435\u0442\u0435\u043B\u0438\u0441\u044C
+      \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435
+      \u0430\u043F\u043F\u0430\u0440\u0430\u0442\u044B \u043F\u043E\u0441\u043B\u0435
+      \u0437\u0435\u043C\u043B\u0435\u0442\u0440\u044F\u0441\u0435\u043D\u0438\u044F. "
+  - speaker: 1
+    text: "\u041E, \u043C\u044B \u043A\u0430\u043A \u0440\u0430\u0437 \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u043B\u0438
+      \u044D\u0442\u0438 \u0434\u0435\u0442\u0430\u043B\u0438. \u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E,
+      \u043C\u044B \u043D\u0435 \u043C\u043E\u0436\u0435\u043C \u043E\u0442\u0434\u0430\u0442\u044C
+      \u0442\u0435\u0431\u0435 \u0438\u0445 \u043F\u0440\u043E\u0441\u0442\u043E
+      \u0442\u0430\u043A, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0442\u0435\u0431\u0435
+      \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
+      \u043D\u0430\u0448\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435."
+  - speaker: 0
+    text: "\u0425\u043E\u0440\u043E\u0448\u043E, \u044F \u0433\u043E\u0442\u043E\u0432 "
+  - speaker: 1
+    text: "\u041D\u0435\u0434\u0430\u043B\u0435\u043A\u043E \u043E\u0442 \u043D\u0430\u0441
+      \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u043F\u0435\u0449\u0435\u0440\u044B
+      \u043D\u0430\u0440\u043E\u0434\u0430 \u0433\u0440\u043E\u0445\u043E\u0433.
+      \u0418\u0445 \u043D\u0430\u0441\u0435\u043B\u044F\u0435\u0442 \u0437\u043B\u043E\u0439
+      \u043D\u0430\u0440\u043E\u0434, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+      \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E \u043D\u0430\u043F\u0430\u0434\u0430\u0435\u0442
+      \u043D\u0430 \u043D\u0430\u0441. \u0421\u0430\u043C\u0438 \u043E\u043D\u0438
+      \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0433\u0440\u044F\u0437\u043D\u044B\u0435
+      \u0438 \u043D\u0435\u0447\u0438\u0441\u0442\u043E\u043F\u043B\u043E\u0442\u043D\u044B\u0435,
+      \u0433\u043E\u0442\u043E\u0432\u044B \u043D\u0430 \u0432\u0441\u0451 \u0440\u0430\u0434\u0438
+      \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0432\u044B\u0433\u043E\u0434\u044B,
+      \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u043D\u0438 \u0447\u0430\u0441\u0442\u043E
+      \u0432\u043E\u0440\u0443\u044E\u0442 \u043D\u0430\u0448\u0438 \u0432\u0435\u0449\u0438
+      \u0438 \u043D\u0430\u0448\u0438\u0445 \u0434\u0435\u0442\u0435\u0439. "
+  - speaker: 1
+    text: "\u0412 \u043E\u0431\u0449\u0435\u043C, \u0433\u0440\u043E\u0445\u043E\u0433
+      \u043F\u0440\u0438\u0447\u0438\u043D\u044F\u044E\u0442 \u043D\u0430\u043C \u0441\u0442\u043E\u043B\u044C\u043A\u043E
+      \u0437\u043B\u0430, \u0447\u0442\u043E \u043C\u044B \u0445\u043E\u0442\u0438\u043C,
+      \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0438\u0437\u0431\u0430\u0432\u0438\u043B
+      \u043D\u0430\u0441 \u043E\u0442 \u043D\u0438\u0445 "
+  - speaker: 0
+    text: "\u042F \u043F\u043E\u043D\u044F\u043B, \u043F\u043E\u043A\u0430\u0436\u0438,
+      \u0433\u0434\u0435 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u0438\u0445
+      \u043F\u0435\u0449\u0435\u0440\u044B \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044E
+      \u0432\u0430\u0448\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435 "
+  - speaker: 1
+    text: "\u0417\u0434\u0435\u0441\u044C \u043D\u0435\u0434\u0430\u043B\u0435\u043A\u043E.
+      \u041D\u0438\u0436\u0435 \u0447\u0435\u0440\u0435\u0437 \u043F\u0435\u0449\u0435\u0440\u0443
+      \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432\u0445\u043E\u0434
+      \u0432 \u0438\u0445 \u0437\u0435\u043C\u043B\u0438 "
+--- !u!114 &317564741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317564733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e3f83c2d274cf4bae8720e6785cec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  black: {fileID: 864346015}
+  isFadeIn: 1
+  isFadeOut: 0
 --- !u!1 &505246220
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +787,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822587853}
   m_CullTransparentMesh: 1
+--- !u!1 &864346013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864346014}
+  - component: {fileID: 864346016}
+  - component: {fileID: 864346015}
+  m_Layer: 5
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &864346014
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864346013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 317564737}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &864346015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864346013}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &864346016
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864346013}
+  m_CullTransparentMesh: 1
 --- !u!1 &881273624
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,232 +937,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881273624}
   m_CullTransparentMesh: 1
---- !u!1 &1020710143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1020710147}
-  - component: {fileID: 1020710146}
-  - component: {fileID: 1020710145}
-  - component: {fileID: 1020710144}
-  m_Layer: 0
-  m_Name: Dialogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1020710144
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020710143}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 8008108066776596917, guid: eb3a4c48b51c4a448a35ba155228e6a4,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1020710145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020710143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d3c06f3168f2b4fa8b284a515a838d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toTroned: 0
-  speakPauseMultiplier: 3
-  speakPauses: 2e002c0021003f002d00
-  dialogueText: {fileID: 1048092670}
-  speakerText: {fileID: 822587855}
-  textSpeed: 0.075
-  lines:
-  - speaker: 1
-    text: "\u041F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C
-      \u0442\u0435\u0431\u044F, \u043D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446!
-      \u041C\u044B \u0440\u0430\u0434\u044B \u0432\u0438\u0434\u0435\u0442\u044C
-      \u0442\u0435\u0431\u044F \u043D\u0430 \u0441\u0432\u043E\u0435\u0439 \u0437\u0435\u043C\u043B\u0435
-      - \u0437\u0435\u043C\u043B\u0435 \u043D\u0430\u0440\u043E\u0434\u0430 \u0432\u0440\u0443\u0434\u043D\u0435\u0439.
-      \u0421\u0440\u0430\u0437\u0443 \u0445\u043E\u0442\u0438\u043C \u0441\u043A\u0430\u0437\u0430\u0442\u044C,
-      \u0447\u0442\u043E \u043D\u0435 \u043F\u0440\u0438\u0447\u0438\u043D\u0438\u043C
-      \u0442\u0435\u0431\u0435 \u043D\u0438\u043A\u0430\u043A\u043E\u0439 \u043E\u0431\u0438\u0434\u044B.
-      \u0421\u043A\u0430\u0436\u0438 \u043D\u0430\u043C, \u043A\u0442\u043E \u0442\u044B
-      \u0438 \u0437\u0430\u0447\u0435\u043C \u043F\u0440\u0438\u0448\u0451\u043B
-      \u043D\u0430 \u043D\u0430\u0448\u0443 \u0437\u0435\u043C\u043B\u044E?"
-  - speaker: 0
-    text: "\u042F \u0440\u043E\u0431\u043E\u0442. \u0421\u044E\u0434\u0430 \u043C\u0435\u043D\u044F
-      \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438 \u043B\u044E\u0434\u0438,
-      \u0447\u0442\u043E\u0431\u044B \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0434\u0435\u0442\u0430\u043B\u0438,
-      \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0440\u0430\u0437\u043B\u0435\u0442\u0435\u043B\u0438\u0441\u044C
-      \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435
-      \u0430\u043F\u043F\u0430\u0440\u0430\u0442\u044B \u043F\u043E\u0441\u043B\u0435
-      \u0437\u0435\u043C\u043B\u0435\u0442\u0440\u044F\u0441\u0435\u043D\u0438\u044F. "
-  - speaker: 1
-    text: "\u041E, \u043C\u044B \u043A\u0430\u043A \u0440\u0430\u0437 \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u043B\u0438
-      \u044D\u0442\u0438 \u0434\u0435\u0442\u0430\u043B\u0438. \u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E,
-      \u043C\u044B \u043D\u0435 \u043C\u043E\u0436\u0435\u043C \u043E\u0442\u0434\u0430\u0442\u044C
-      \u0442\u0435\u0431\u0435 \u0438\u0445 \u043F\u0440\u043E\u0441\u0442\u043E
-      \u0442\u0430\u043A, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0442\u0435\u0431\u0435
-      \u043F\u0440\u0438\u0434\u0451\u0442\u0441\u044F \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C
-      \u043D\u0430\u0448\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435."
-  - speaker: 0
-    text: "\u0425\u043E\u0440\u043E\u0448\u043E, \u044F \u0433\u043E\u0442\u043E\u0432 "
-  - speaker: 1
-    text: "\u041D\u0435\u0434\u0430\u043B\u0435\u043A\u043E \u043E\u0442 \u043D\u0430\u0441
-      \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u043F\u0435\u0449\u0435\u0440\u044B
-      \u043D\u0430\u0440\u043E\u0434\u0430 \u0433\u0440\u043E\u0445\u043E\u0433.
-      \u0418\u0445 \u043D\u0430\u0441\u0435\u043B\u044F\u0435\u0442 \u0437\u043B\u043E\u0439
-      \u043D\u0430\u0440\u043E\u0434, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
-      \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E \u043D\u0430\u043F\u0430\u0434\u0430\u0435\u0442
-      \u043D\u0430 \u043D\u0430\u0441. \u0421\u0430\u043C\u0438 \u043E\u043D\u0438
-      \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0433\u0440\u044F\u0437\u043D\u044B\u0435
-      \u0438 \u043D\u0435\u0447\u0438\u0441\u0442\u043E\u043F\u043B\u043E\u0442\u043D\u044B\u0435,
-      \u0433\u043E\u0442\u043E\u0432\u044B \u043D\u0430 \u0432\u0441\u0451 \u0440\u0430\u0434\u0438
-      \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439 \u0432\u044B\u0433\u043E\u0434\u044B,
-      \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043E\u043D\u0438 \u0447\u0430\u0441\u0442\u043E
-      \u0432\u043E\u0440\u0443\u044E\u0442 \u043D\u0430\u0448\u0438 \u0432\u0435\u0449\u0438
-      \u0438 \u043D\u0430\u0448\u0438\u0445 \u0434\u0435\u0442\u0435\u0439. "
-  - speaker: 1
-    text: "\u0412 \u043E\u0431\u0449\u0435\u043C, \u0433\u0440\u043E\u0445\u043E\u0433
-      \u043F\u0440\u0438\u0447\u0438\u043D\u044F\u044E\u0442 \u043D\u0430\u043C \u0441\u0442\u043E\u043B\u044C\u043A\u043E
-      \u0437\u043B\u0430, \u0447\u0442\u043E \u043C\u044B \u0445\u043E\u0442\u0438\u043C,
-      \u0447\u0442\u043E\u0431\u044B \u0442\u044B \u0438\u0437\u0431\u0430\u0432\u0438\u043B
-      \u043D\u0430\u0441 \u043E\u0442 \u043D\u0438\u0445 "
-  - speaker: 0
-    text: "\u042F \u043F\u043E\u043D\u044F\u043B, \u043F\u043E\u043A\u0430\u0436\u0438,
-      \u0433\u0434\u0435 \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u0438\u0445
-      \u043F\u0435\u0449\u0435\u0440\u044B \u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u044E
-      \u0432\u0430\u0448\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435 "
-  - speaker: 1
-    text: "\u0417\u0434\u0435\u0441\u044C \u043D\u0435\u0434\u0430\u043B\u0435\u043A\u043E.
-      \u041D\u0438\u0436\u0435 \u0447\u0435\u0440\u0435\u0437 \u043F\u0435\u0449\u0435\u0440\u0443
-      \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432\u0445\u043E\u0434
-      \u0432 \u0438\u0445 \u0437\u0435\u043C\u043B\u0438 "
---- !u!114 &1020710146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020710143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 582ee3dc190b20d4c9081fa1dfb1c7cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VrudniSpeech: {fileID: 8300000, guid: da8b13005c2f8b24393ae755e1e285db, type: 3}
-  RatSpeech: {fileID: 8300000, guid: 5262d31ed888a434f954d513e3d14866, type: 3}
-  TronedSpeech: {fileID: 8300000, guid: dbec9833f65d7ec4f88d7748ca9eb266, type: 3}
-  RatSpeech2: {fileID: 8300000, guid: 6624477ce18326249ba25e9073d410d3, type: 3}
---- !u!4 &1020710147
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020710143}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3281852, y: 0.042861637, z: -2.0455098}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048092668
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +1030,6 @@ GameObject:
   - component: {fileID: 1081327361}
   - component: {fileID: 1081327360}
   - component: {fileID: 1081327359}
-  - component: {fileID: 1081327362}
   m_Layer: 5
   m_Name: Skip button
   m_TagString: Untagged
@@ -985,17 +1045,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081327357}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
   m_Children: []
   m_Father: {fileID: 317564737}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 590, y: 261}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -10, y: -10}
   m_SizeDelta: {x: 80, y: 80}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.9999998, y: 0.99999994}
 --- !u!114 &1081327359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1100,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020710145}
+      - m_Target: {fileID: 317564740}
         m_TargetAssemblyTypeName: DialogueControl, Assembly-CSharp
         m_MethodName: Skip
         m_Mode: 1
@@ -1090,18 +1150,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081327357}
   m_CullTransparentMesh: 1
---- !u!114 &1081327362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081327357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 538f990f3b9c53f4f83663a8e4a38b7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1437740360
 GameObject:
   m_ObjectHideFlags: 0
