@@ -114,9 +114,12 @@ public class DialogueControl : MonoBehaviour
                 else
                 {
                     //переход к игре
-                    StartCoroutine(FadeToNextScene());
-                    //SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
-                }
+                    if (fios != null)
+                        StartCoroutine(FadeToNextScene());
+                    else
+                        toNextScene();
+                //SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
+            }
             //}
 
             return;
