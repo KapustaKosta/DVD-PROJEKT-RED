@@ -16,14 +16,39 @@ public class CutSceneControl : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(WaitAndGoNext());
+        if (seconds > 0)
+            StartCoroutine(WaitAndGoNext());
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            StopAllCoroutines();
+            StartCoroutine(SkipCoroutine());
+        }
     }
 
     private IEnumerator WaitAndGoNext()
     {
         yield return new WaitForSeconds(seconds);
-        fios.isFadeOut = true;
+        if (fios != null)
+            fios.isFadeOut = true;
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
     }
+
+    private IEnumerator SkipCoroutine()
+    {
+        if (fios != null)
+            fios.isFadeOut = true;
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
+    }
+
+    /*public void Skip()
+    {
+        StopAllCoroutines();
+        StartCoroutine(SkipCoroutine());
+    }*/
 }
